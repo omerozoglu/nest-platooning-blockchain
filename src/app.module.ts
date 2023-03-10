@@ -3,12 +3,7 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
 @Module({
-  imports: [
-    LoggerModule.forRoot({
-      isGlobal: true,
-      logDirectory: 'logs', // burada oluşturulacak log klasörü ismi belirleniyor
-    }),
-  ],
+  imports: [],
   controllers: [AppController],
   providers: [AppService, Logger],
 })
